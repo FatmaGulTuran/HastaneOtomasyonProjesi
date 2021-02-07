@@ -1,0 +1,8 @@
+- Bilgisayarda MSSQL kurulu olmasý gerekir.
+-klasör içindeki veritabanlarýný MSSQL içindeki Data klasörü içine yapýþtýrmak gerekir.(Kopyalamaya izin verilmezse Hizmetler den SQLSERVER yazan durdura týklamamýz gerekiyor.)
+-Dataya kopyalama yapýldýktan sonra SQL server üzerinden Attach iþlemi yapmamýz gerekir.
+-Kurulu SetUp klasörü icindeki Debug içindeki .exe dosyasý çalýþtýrýlarak yaparýz.
+- Adres yazýlý olan text dosyasýnýn içeriðine ilk kýsma kendi SQL server ismni girmeniz gerekir 
+  Data Source=(Buraya kurulacak pc nin server adý girilmelidir)\SQLEXPRESS;Initial Catalog=HastaneOtomasyon;Integrated Security=True
+***Ayroca adres yazýlý olan txt dosyasýný :C içine atýlmasý gerekir  çünkü solution içinde text nin adresini C klasörü içinde verdik .
+ public String Adres = System.IO.File.ReadAllText(@"C:\adresim.txt");//solution içinde böyle verdik.
